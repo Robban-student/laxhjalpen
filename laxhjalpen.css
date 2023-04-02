@@ -1,0 +1,95 @@
+@charset "UTF-8";
+body {
+	margin: auto;						/* Centrera sidan */
+	max-width: 860px;
+	font-family: "Helvetica Neue", "Liberation Sans", Calibri, Arial, sans-serif;
+	font-size: 100%;					/* Startvärde */
+}
+header {
+	text-align: center;
+}
+
+/*section, header, footer {
+	outline: 1px solid red;		*/		/* Provisorisk */
+}
+
+.startpage h1 {
+	font-size: 500%;					/* Massiv rubrik på startsidan */
+	
+}
+.tagline{
+	font-size: 120%;
+	padding: 10px;						/* Avstånd till kantlinje */
+	border-top: 3px double #00AF64;
+	border-bottom: 3px double #00AF64;
+	margin: 1em 0;						/* Avstånd nedåt men inte uppåt */
+}
+.menu > h2 {
+	margin: 0 0 1em;
+	padding: 2em 0;
+	background-color: #F5F5F5; 			/* Mycket ljusgrå */
+	text-align: center;
+}
+footer {
+	margin-top: 3em;
+	text-align: center;
+	color: #999
+}
+section {
+	display: inline-block;
+	width: 20%;
+	/*margin-right: 4%;*/
+}
+
+.startpage header,footer{
+	flex: 0 0 100%;
+}
+.startpage section {
+	flex: 0 0 20%;
+}
+html {
+	margin: 2%;
+}
+.startpage {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.menu a:link, a:visited{
+	text-decoration: none;
+	color: #000;
+}
+.menu a:focus, .menu a:hover{
+	text-decoration: underline;
+	color: #A62F00;
+}
+.menu a:active{
+	text-decoration: underline;
+	color: #FF4900;
+}
+.menu h2{
+	/* Nya rader i befintlig regel*/
+	box-shadow: inset 0 0 20px #007241;
+	border-radius: 50%;
+	font-family: 'Merienda One',cursive;
+}
+h1{
+	font-family: 'Merienda-one', cursive;
+}
+
+h1::first-Letter {
+	color: #00AF64;
+}
+.startpage .logo {
+	width: 235px;
+	height: 198;
+}
+.hwrap {
+	display: flex; /* Gör div till en flex container */
+	flex-wrap: wrap; /* Radbryt om det behövs */
+	align-items: center; /* Lägg elementen centrerat vertikalt */
+	justify-content: center; /* Och intill varandra centrerat */
+}
+.hwrap > a {
+	margin-right: 30px;
+}
